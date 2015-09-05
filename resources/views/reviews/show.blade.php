@@ -49,9 +49,9 @@ $time = Carbon::createFromTimeStamp($review->fr_date)->diffForHumans();
             <div class="zban">
                 <div class="sug_box " style="margin-top:0px;">
                     @if ($film->fl_image)
-                    <img class="lazy img-responsive" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$film->fl_year}}/{{$film->fl_image}}"  height="360" width="240px" title="" alt="" itemprop="image"  />
+                    <img class="lazy img-responsive" src="{{ Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$film->fl_year}}/{{$film->fl_image}}"  height="360" width="240px" title="" alt="" itemprop="image"  />
                     @else
-                    <img class="lazy img-responsive" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg"  height="317" width="220px" title="" alt="" itemprop="image"  />
+                    <img class="lazy img-responsive" src="{{ Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}berdict/img/default_poster.jpg"  height="317" width="220px" title="" alt="" itemprop="image"  />
                     @endif
                 </div>
             </div>

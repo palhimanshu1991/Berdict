@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" type="text/css" href="{{Config::get('url.home')}}bootstrap/css/bootstrap.min2.css">
         <link rel="stylesheet" type="text/css" href="{{Config::get('url.home')}}bootstrap/css/docs.css">
-        <link rel="icon" href="{{ Config::get('url.home')}}public/favicon.png" sizes="32x32">
+        <link rel="icon" href="{{ Config::get('url.home')}}favicon.png" sizes="32x32">
 
         <style>
             @import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);

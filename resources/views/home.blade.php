@@ -81,7 +81,7 @@
                 @foreach ($spot as $movie)
                 <div class="grid_4 left alpha top-user-rev-a" style="">									
                     <a href="{{ Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}">
-                        <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}public/uploads/movie/{{$movie->fl_year}}/{{ $movie->fl_image}}" width="212" height="312" style="">
+                        <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$movie->fl_year}}/{{ $movie->fl_image}}" width="212" height="312" style="">
                     </a>
                 </div>	
                 @endforeach
@@ -101,7 +101,7 @@
                 @foreach ($other as $movie)
                 <div class="grid_2 left alpha top-user-rev-a similar_likes" style="width:109px;margin:0;">									
                     <a href="{{ Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}">
-                        <img class="lazy" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" width="120px" height="180px" style="">
+                        <img class="lazy" src="{{ Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" width="120px" height="180px" style="">
                     </a>
                 </div>	
                 @endforeach
@@ -132,7 +132,7 @@
                         <div class="grid_5 column alpha" style="width:600px;">
                             <div class="user-snippet">
                                 <a class="left user-snippet-image" href="{{ Config::get('url.home')}}{{$rev->username}}">
-                                    <img class="lazy" src="{{ Config::get('url.home')}}public/berdict/img/default.jpg" data-original="{{ Config::get('url.home')}}public/user_uploads/1000/{{$rev->id}}/{{$rev->usr_image}}" alt="" width="" height="">
+                                    <img class="lazy" src="{{ Config::get('url.home')}}berdict/img/default.jpg" data-original="{{ Config::get('url.home')}}user_uploads/1000/{{$rev->id}}/{{$rev->usr_image}}" alt="" width="" height="">
                                 </a>
                                 <div class="user-snippet-details">
                                     <div><a class="semi-bold" href="{{ Config::get('url.home')}}{{$rev->username}}">{{$rev->usr_fname.' '.$rev->usr_lname }}</a> wrote a review for                                                

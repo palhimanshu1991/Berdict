@@ -46,7 +46,7 @@
                                 <div class="grid_5 column alpha" style="width:600px;">
                                     <div class="user-snippet">
                                         <a class="left user-snippet-image" href="{{ Config::get('url.home')}}{{$rev->username}}">
-                                            <img class="lazy" src="{{ Config::get('url.home')}}public/berdict/img/default.jpg" data-original="{{ Config::get('url.home')}}public/user_uploads/1000/{{$rev->id}}/{{$rev->usr_image}}" alt="" width="" height="">
+                                            <img class="lazy" src="{{ Config::get('url.home')}}berdict/img/default.jpg" data-original="{{ Config::get('url.home')}}user_uploads/1000/{{$rev->id}}/{{$rev->usr_image}}" alt="" width="" height="">
                                         </a>
                                         <div class="user-snippet-details">
                                             <div><a class="semi-bold" href="{{ Config::get('url.home')}}{{$rev->username}}">{{$rev->usr_fname.' '.$rev->usr_lname }}</a> wrote a review for                                                
@@ -92,9 +92,9 @@
         <div class="zban">
             <div class="sug_box right" style="margin-top:10px;">
                 @if ($movie->fl_image)
-                <img class="lazy" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}"  height="360" width="240px" title="" alt="" itemprop="image"  />
+                <img class="lazy" src="{{ Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}"  height="360" width="240px" title="" alt="" itemprop="image"  />
                 @else
-                <img class="lazy" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg"  height="317" width="220px" title="" alt="" itemprop="image"  />
+                <img class="lazy" src="{{ Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}berdict/img/default_poster.jpg"  height="317" width="220px" title="" alt="" itemprop="image"  />
                 @endif
             </div>
         </div>

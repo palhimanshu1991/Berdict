@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" type="text/css" href="{{Config::get('url.home')}}bootstrap/css/bootstrap.min2.css">
         <link rel="stylesheet" type="text/css" href="{{Config::get('url.home')}}bootstrap/css/docs.css">
-        <link rel="icon" href="{{ Config::get('url.home')}}public/favicon.png" sizes="32x32">
+        <link rel="icon" href="{{ Config::get('url.home')}}favicon.png" sizes="32x32">
         <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
 
         <style>
