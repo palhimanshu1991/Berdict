@@ -64,7 +64,7 @@ $time = Carbon::createFromTimeStamp($review->fr_date)->diffForHumans();
                             <div class="res-review-header col-md-12 pad0" style="width:100%;height:48px;">
                                 <div class="res-review-user col-md-6 pad0">
                                     <a class="left" href="{{Config::get('url.home')}}{{$user->username}}">
-                                        <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->username}}/{{$user->usr_image}}" alt="" style="width: 48px; display: inline;">
+                                        <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->username}}/{{$user->usr_image}}" alt="" style="width: 48px; display: inline;">
                                     </a>
                                     <div class="res-review-user-details" style="text-transform: uppercase; ">
                                         <a href="{{Config::get('url.home')}}{{$user->username}}">{{$user->usr_fname.' '.$user->usr_lname}}</a> 

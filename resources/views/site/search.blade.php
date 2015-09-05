@@ -34,7 +34,7 @@
                 <div class="row pad0" style="border-bottom: 1px solid #dbdbdb;margin-bottom:10px;padding-bottom:10px">
                     <div class="col-sm-2 left pad0" style="margin-right:15px">
                         <a href="{{Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}" title="{{$movie->fl_name}}">
-                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" style="width:120px;height:178px;">
+                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" style="width:120px;height:178px;">
                         </a>
 						@if(Auth::check())
 						@if(Auth::user()->usr_level==2)
@@ -98,7 +98,7 @@
                 <div class="row pad0" style="border-bottom: 1px solid #dbdbdb;margin-bottom:10px;padding-bottom:10px">
                     <div class="col-sm-2 left pad0" style="margin-right:15px">
                         <a href="{{Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}" title="{{$movie->fl_name}}">
-                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" style="width:120px;height:178px;">
+                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}" style="width:120px;height:178px;">
 						</a>
 						@if(Auth::check())
 						@if(Auth::user()->usr_level==2)
@@ -175,7 +175,7 @@
 				<div class="res-review-header col-md-12 pad0" style="width:100%;height:45px;">
 					<div class="res-review-user col-md-10 pad0">
 						<a class="left" href="{{Config::get('url.home')}}{{$user->username}}">
-							<img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="height: 45px; width: 45px; display: inline;">
+							<img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="height: 45px; width: 45px; display: inline;">
 						</a>
 						<div style="font-size: 13px;" class="res-review-user-details">
 							<a href="{{Config::get('url.home')}}{{$user->username}}">{{$user->usr_fname.' '.$user->usr_lname}}</a>  

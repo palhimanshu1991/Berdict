@@ -8,7 +8,7 @@
                     <div class="res-review-user col-md-6 pad0">
                         <a class="left" href="{{Config::get('url.home')}}{{$people->username}}">
                             @if($people->usr_image)
-                            <img class="lazy img-responsive " src="{{Config::get('url.web')}}public/user_uploads/1000/{{$people->id}}/{{$people->usr_image}}" alt="" style="width: 48px; display: inline;">
+                            <img class="lazy img-responsive " src="{{Config::get('url.web')}}user_uploads/1000/{{$people->id}}/{{$people->usr_image}}" alt="" style="width: 48px; display: inline;">
                             @else
                             <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" alt="" style="width: 48px; display: inline;">
                             @endif

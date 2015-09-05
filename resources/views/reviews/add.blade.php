@@ -6,7 +6,7 @@ $time = Carbon::createFromTimeStamp($latest->fr_date)->diffForHumans();
 <div class="row-fluid col-md-12" style="margin-bottom:30px;" id="data-review-{{$latest->fr_id}}">
    <div class="res-review-user col-md-12 pad0" style="height: 50px;">
       <a class="left" href="{{Config::get('url.home')}}{{$user->username}}">
-        <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;">
+        <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;">
       </a>
       <div class="feed-rate-user-details">
          <a href="{{Config::get('url.home')}}{{$user->username}}"><span class="helper">{{$user->usr_fname.' '.$user->usr_lname}} </span></a> 

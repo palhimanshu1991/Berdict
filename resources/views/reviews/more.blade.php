@@ -11,14 +11,14 @@ $time = Carbon::createFromTimeStamp($review->fr_date)->diffForHumans();
 		<div class="res-review-header col-md-12 pad0" style="width:100%;height:48px;">
 			<div class="res-review-user col-md-9 pad0">
 				<a class="left" href="{{Config::get('url.home')}}{{$review->username}}">
-					<img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="width:48px;height:48px;display: inline;">
+					<img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="width:48px;height:48px;display: inline;">
 				</a>
 				<div class="res-review-user-details">
 					<a href="{{Config::get('url.home')}}{{$review->username}}">{{$review->usr_fname.' '.$review->usr_lname}}</a> 
 				</div>
 			</div>
 			<div class="res-review-rating col-md-3 pad0">
-				<img class="img-responsive" src="{{Config::get('url.web')}}public/rate_{{$review->fr_vote}}.jpg"  alt="" style="width:48px;display: inline;float:right;"></span>
+				<img class="img-responsive" src="{{Config::get('url.web')}}rate_{{$review->fr_vote}}.jpg"  alt="" style="width:48px;display: inline;float:right;"></span>
 				<span  style="background:#dbdbdb;;width:36px;height:48px;display: inline;float:right;font-size:20px;font-weight:600;padding:10px 0px;color:#666;text-align:center;">
 					{{$review->fr_vote}}
 				</span>

@@ -30,7 +30,7 @@
                 <div class="row pad0" style="border-bottom: 1px solid #dbdbdb;margin-bottom:10px;padding-bottom:10px">
                     <div class="col-sm-2 left pad0" style="margin-right:15px">
                         <a href="{{Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}" title="{{$movie->fl_name}}">
-                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
+                            <img class="lazy img-responsive" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
                         </a>
                     </div>
                     <div class="col-md-9 pad0" style="">

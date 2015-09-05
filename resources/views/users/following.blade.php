@@ -18,9 +18,9 @@
             <div class="profile-card-top" align="center">
                 <div class="profile-card-image">
                     @if($user->usr_image)
-                    <img class="img-responsive lazy" style="width:200px;height:200px;" src="{{Config::get('url.web')}}public/berdict/img/default.jpg" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->id}}/{{$user->usr_image}}"  />
+                    <img class="img-responsive lazy" style="width:200px;height:200px;" src="{{Config::get('url.web')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->id}}/{{$user->usr_image}}"  />
                     @else 
-                    <img class="img-responsive lazy" style="width:200px;height:200px;" src="{{Config::get('url.web')}}public/berdict/img/default.jpg" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->id}}/{{$user->usr_image}}"  />
+                    <img class="img-responsive lazy" style="width:200px;height:200px;" src="{{Config::get('url.web')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->id}}/{{$user->usr_image}}"  />
                     @endif
                 </div>  
                 <div class="profile-card-name" style="">
@@ -104,7 +104,7 @@
                 <div class="col-md-6 pad0 {{$class}}" style="margin-bottom:10px;">
                     <div class="col-md-12 pad0" style="margin-right:20px"> 
                         <a rel="nofollow" class="left " href="{{Config::get('url.home')}}{{$user->username}}" style="width:90px;height:90px;">
-                            <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="display: inline;width:80px;height:80px;">
+                            <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default.jpg" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$user->id}}/{{$user->usr_image}}" alt="" style="display: inline;width:80px;height:80px;">
                         </a>
                         <div class="user-snippet-details">
                             <div class="user-snippet-name" >

@@ -129,7 +129,7 @@
                           </div>
                        </div>              
                        <div class="res-review-rating col-md-3 col-xs-3 pad0" style="width:80px:">
-                          <img class=" img-responsive" src="{{Config::get('url.web')}}public/rate_{{$review->fr_vote}}.jpg" alt="" style="width:42px;display: inline;float:right;">
+                          <img class=" img-responsive" src="{{Config::get('url.web')}}rate_{{$review->fr_vote}}.jpg" alt="" style="width:42px;display: inline;float:right;">
                           <span style="background:#dbdbdb;;width:30px;height:42px;display: inline;float:right;font-size:16px;font-weight:600;padding:10px 0px;color:#666;text-align:center;">
                           {{$review->fr_vote}}                                     
                           </span>
@@ -149,9 +149,9 @@
                     <div class="res-review-user col-md-12 pad0" style="height: 50px;margin-top:25px;">
                        <a class="left" href="{{Config::get('url.home')}}{{$review->username}}">
                         @if($review->usr_image)
-                          <img class="lazy img-responsive " src="{{Config::get('url.web')}}public/user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;border:1px solid #ddd;">
+                          <img class="lazy img-responsive " src="{{Config::get('url.web')}}user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;border:1px solid #ddd;">
                         @else
-                          <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}public/user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;border:1px solid #ddd;">                        
+                          <img class="lazy img-responsive " src="{{Config::get('url.home')}}berdict/img/avatar_50.png" data-original="{{Config::get('url.web')}}user_uploads/1000/{{$review->id}}/{{$review->usr_image}}" alt="" style="height:36px;width: 36px; display: inline;border-radius:50px;border:1px solid #ddd;">                        
                         @endif                       
                        </a>
                        <div class="feed-rate-user-details">
@@ -165,9 +165,9 @@
                  <div class="col-md-3 visible-md-9 hidden-sm hidden-xs" style="margin-bottom:40px;">
                     <a class="left" href="{{Config::get('url.home')}}movie/{{$review->fl_id}}/{{\Helpers\Helper::cleanUrl($review->fl_name)}}">
                         @if($review->fl_image)
-                        <img class="lazy" data-original="{{Config::get('url.home')}}berdict/img/default_poster.jpg" src="{{Config::get('url.web')}}public/uploads/movie/{{$review->fl_year}}/{{$review->fl_image}}" alt="" style="display: inline;margin-left: 20px;border:1px solid #ccc;max-height: 320px;min-height: 300px;max-width: 210px;width: 205px;">             
+                        <img class="lazy" data-original="{{Config::get('url.home')}}berdict/img/default_poster.jpg" src="{{Config::get('url.web')}}uploads/movie/{{$review->fl_year}}/{{$review->fl_image}}" alt="" style="display: inline;margin-left: 20px;border:1px solid #ccc;max-height: 320px;min-height: 300px;max-width: 210px;width: 205px;">             
                         @else
-                        <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}public/uploads/movie/{{$review->fl_year}}/{{$review->fl_image}}" alt="" style="display: inline;margin-left: 20px;border:1px solid #ccc;max-height: 320px;min-height: 300px;max-width: 210px;width: 205px;">             
+                        <img class="lazy" src="{{Config::get('url.home')}}berdict/img/default_poster.jpg" data-original="{{Config::get('url.web')}}uploads/movie/{{$review->fl_year}}/{{$review->fl_image}}" alt="" style="display: inline;margin-left: 20px;border:1px solid #ccc;max-height: 320px;min-height: 300px;max-width: 210px;width: 205px;">             
                         @endif
                     </a>
                  </div>         
