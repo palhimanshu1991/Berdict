@@ -132,27 +132,7 @@
 	            	@endif
 	            </div>
 
-	            <div class="row">
-					<div class="col-md-2">
-	            		<h2>
-	            			<b>{{$movie->fl_imdbRating}}</b>
-	            			<span class="maximum-rating">/10</span>
-	            		</h2>
-	            	</div>
-	            	<div class="col-md-2">
-	            		<h2>
-		            		<b>{{$movie->fl_metascore}}</b>
-	            			<span class="maximum-rating">/100</span>            		
-	            		</h2>
-	            		
-	            	</div>
-	            	<div class="col-md-2">
-	            		<h2>
-	            			<b>{{$movie->fl_tomatoMeter}}</b>
-	            			<span class="maximum-rating">%</span>	            		
-	            		</h2>	            		
-	            	</div>
-	            </div>
+
 
 
 
