@@ -172,11 +172,11 @@ class UsersController extends Controller {
             
             //creating a directory for the user with blank index.php
             $id = $insertedId;
-            $index = ('public/user_uploads/1000/' . $id . '/index.php');
+            $index = ('user_uploads/1000/' . $id . '/index.php');
 
             //Makes the directories if the index file does not exist
             if (!File::exists($index)) {
-                File::makeDirectory('public/user_uploads/1000/' . $id . '', 0777, true);
+                File::makeDirectory('user_uploads/1000/' . $id . '', 0777, true);
                 $handle = fopen($index, 'x+');
                 fclose($handle);
             }
@@ -267,11 +267,11 @@ class UsersController extends Controller {
 
         //Define directory according to the 
         $dirname = Auth::user()->id;
-        $index= ("public/user_uploads/1000/" . $dirname . "/index.php");
+        $index= ("user_uploads/1000/" . $dirname . "/index.php");
 
         //Makes the directories if the index file does not exist
         if (!File::exists($index)) {
-            File::makeDirectory('public/user_uploads/1000/' . $dirname . '', 0777, true);
+            File::makeDirectory('user_uploads/1000/' . $dirname . '', 0777, true);
             $handle = fopen($index, 'x+');
             fclose($handle);
         }        
@@ -296,7 +296,7 @@ class UsersController extends Controller {
         $user = User::find(Auth::user()->id);
         $dirname = Auth::user()->id;
         $crop = $this->Crop(Auth::user()->id, $time);
-        $indexfile = ("public/user_uploads/1000/" . "$dirname" . "/index.php");
+        $indexfile = ("user_uploads/1000/" . "$dirname" . "/index.php");
 
         if (isset($_FILES["file"]["tmp_name"])) { //If the temp name is set then proceed
             if ((($_FILES["file"]["type"] == "image/gif") //List of file types allowed
@@ -313,7 +313,7 @@ class UsersController extends Controller {
                     "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
 
                     $image_name = "$time" . "_" . $_FILES["file"]["name"];
-                    move_uploaded_file($_FILES["file"]["tmp_name"], "public/user_uploads/1000/" . "$dirname" . "/" . $image_name);
+                    move_uploaded_file($_FILES["file"]["tmp_name"], "user_uploads/1000/" . "$dirname" . "/" . $image_name);
                     //"Stored in: " . "user_uploads/1000/"."$dirname"."/".$image_name;
                 }
             }
@@ -508,7 +508,7 @@ class UsersController extends Controller {
 
                     // new unique filename
 
-                    $sTempFileName = 'public/user_uploads/1000/' . "$dirname" . '/' . $time;
+                    $sTempFileName = 'user_uploads/1000/' . "$dirname" . '/' . $time;
 
                     // move uploaded file into cache folder
                     move_uploaded_file($_FILES['image_file']['tmp_name'], $sTempFileName);
