@@ -115,7 +115,7 @@ label.btn.btn-primary.poster-checkbox.btn-lg.btn-block {
             @foreach($movies as $movie)
             <div class="col-md-2 pbot2" data-toggle="buttons">
                 <label genre-id="1" genre-name="Action" class="btn btn-primary poster-checkbox btn-lg btn-block">
-                 <img style="height:215px;border:1px solid #ddd;" class="img-responsive lazy" rel="popover" data-original-title="{{$movie->fl_name}} ({{$movie->fl_year}})" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="{{$movie->fl_outline}}" src="{{ Config::get('url.web')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
+                 <img style="height:215px;border:1px solid #ddd;" class="img-responsive lazy" rel="popover" data-original-title="{{$movie->fl_name}} ({{$movie->fl_year}})" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="{{$movie->fl_outline}}" src="{{ Config::get('url.home')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
                     <span class="badge-rating hidden">{{$movie->fl_rating}}</span>
                     <input type="checkbox" autocomplete="off">  
                     <span class="badge"><i class="glyphicon glyphicon-ok"></i></span>

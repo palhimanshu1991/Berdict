@@ -45,7 +45,7 @@ window._fbq.push(['track', '6028314635731', {'value':'0.01','currency':'USD'}]);
                             <li>
                                 <div class="feed-gallery left" rel="popover" data-original-title="{{$movie->fl_name}}" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="{{$movie->fl_outline}}" style="">									
                                     <a href="{{ Config::get('url.home')}}movie/{{$movie->fl_id}}/{{\Helpers\Helper::cleanUrl($movie->fl_name)}}">
-                                        <img class="lazy img-responsive" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.web')}}public/uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
+                                        <img class="lazy img-responsive" src="{{ Config::get('url.home')}}public/berdict/img/default_poster.jpg" data-original="{{ Config::get('url.home')}}uploads/movie/{{$movie->fl_year}}/{{$movie->fl_image}}">
                                     </a>
                                 </div>	               
                             </li>
