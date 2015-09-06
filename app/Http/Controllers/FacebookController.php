@@ -11,6 +11,7 @@ use Auth;
 use DB;
 use Input;
 use App\User;
+use Hash;
 
 class FacebookController extends Controller {
 
