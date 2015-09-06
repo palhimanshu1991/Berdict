@@ -14,6 +14,7 @@ use App\Friend;
 use App\Review;
 use App\User;
 use File;
+use Hash;
 use Input;
 
 
@@ -166,9 +167,9 @@ class UsersController extends Controller {
 
             $insertedId = $user->id;
             
-            $invite = New InviteController;
-            $invite->updateInvite($code);
-            $invite->createCodes($insertedId);
+//            $invite = New InviteController;
+//            $invite->updateInvite($code);
+//            $invite->createCodes($insertedId);
             
             //creating a directory for the user with blank index.php
             $id = $insertedId;

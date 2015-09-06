@@ -41,18 +41,6 @@
 
         </style>
 
-<!--         @if(Config::get('url.home')=='http://localhost/live/')
-        <script type="text/javascript">
-            FB_APP_ID = "292311107459306";
-            HOST = "http://localhost/live/";
-        </script>
-        @else 
-        <script type="text/javascript">
-            FB_APP_ID = "437161969726572";
-            HOST = "http://www.berdict.com/";
-        </script>
-        @endif -->
-
         <script type="text/javascript">
             FB_APP_ID = "{{env('FB_APP_ID')}}";
             HOST = "{{env('SITE_URL')}}";

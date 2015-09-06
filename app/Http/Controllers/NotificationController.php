@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use Auth;
 use DB;
+use Input;
 
 class NotificationController extends Controller {
 
@@ -68,7 +69,7 @@ class NotificationController extends Controller {
      * @return Response
      */
     public function create() {
-        return View::make('notifications.create');
+        return view('notifications.create');
     }
 
     /**
@@ -87,7 +88,7 @@ class NotificationController extends Controller {
      * @return Response
      */
     public function show($id) {
-        return View::make('notifications.show');
+        return view('notifications.show');
     }
 
     /**
@@ -97,7 +98,7 @@ class NotificationController extends Controller {
      * @return Response
      */
     public function edit($id) {
-        return View::make('notifications.edit');
+        return view('notifications.edit');
     }
 
     /**

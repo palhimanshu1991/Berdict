@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 
 use Auth;
 use DB;
+use Input;
+use App\User;
 
 class FacebookController extends Controller {
 

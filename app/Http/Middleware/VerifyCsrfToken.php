@@ -17,7 +17,13 @@ class VerifyCsrfToken extends BaseVerifier
     	'watchlist/*',
     	'watched/*',
     	'favourite/*',
-        'comment/*'
+        'comment/*',
+        'notifications/*',
+        'facebook/*',
+        'user/*',
+        'login',
+        'signin',
+        'signup'
     ];
 
 

@@ -113,20 +113,17 @@ class ReviewsController extends Controller {
 
         // gets the review details from the given id
         $review = DB::table('film_review')
-                ->where('fr_id', $id)
-                ->remember(1)
+                ->where('fr_id', $id)                
                 ->first();
 
         // gets the movie details from the review
         $film = DB::table('film')
-                ->where('fl_id', $review->fr_fl_id)
-                ->remember(1)
+                ->where('fl_id', $review->fr_fl_id)                
                 ->first();
 
         // get the user details from the review
         $user = DB::table('users')
-                ->where('id', $review->fr_usr_id)
-                ->remember(1)
+                ->where('id', $review->fr_usr_id)                
                 ->first();
 
         return view('reviews.show', compact('review', 'film', 'user'));

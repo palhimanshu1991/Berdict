@@ -70,36 +70,7 @@ window._fbq.push(['track', '6028314635731', {'value':'0.01','currency':'USD'}]);
     </div>
 </div>
 
-<div class="container ptop2 mtop">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3" style="
-    background: #efefef;
-    padding: 30px;
-">
-        <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-            <span class="sr-only">40% Complete (success)</span>
-          </div>
-        </div>      
-    <ul class="list-group" style="background:;padding: 00px;border-radius:3px;">
-      <li class="list-group-item list-group-item-danger">
-      Add Profile Information
-      </li>
-      <li class="list-group-item list-group-item-danger">
-        Write 5 Movies Reviews 
-      </li>
-      <li class="list-group-item">
-        Add 5 Movies in Watchlist
-      </li>
-      <li class="list-group-item">
-        Add 5 Movies in Favourites
-      </li>
-    </ul>
-      </div>
-    </div>
-</div>
-
-<div class="container ptop1" ="mainframe">
+<div class="container ptop1">
     <div class="col-md-12 pad0 grid_left column" style="margin-bottom: 20px;margin-right: 20px;">
 
         <!--- Recent Reviews---->
@@ -210,11 +181,11 @@ window._fbq.push(['track', '6028314635731', {'value':'0.01','currency':'USD'}]);
                <div class="res-review-actions" style="font-size: 13px;margin: 20px 0px 15px;letter-spacing: -0.02em;   font-weight: 400;   font-style: normal;color: rgba(0,0,0,0.45);white-space: nowrap;   text-overflow: ellipsis;">
                   @if(Auth::check())
                   @if ($like)
-                  <span class="review-like" id="review-like-{{$film->fr_id}}" data-id="{{$film->fr_id}}" style="display: none;margin-left:;" title=""> Like</span>
-                  <span class="review-unlike" id="review-unlike-{{$film->fr_id}}" data-id="{{$film->fr_id}}"  title="" style="margin-left:;"> Liked</span>
+                  <span class="review-like" id="review-like-{{$film->fr_id}}" data-id="{{$film->fr_id}}" style="display: none;" title=""> Like</span>
+                  <span class="review-unlike" id="review-unlike-{{$film->fr_id}}" data-id="{{$film->fr_id}}"  title="" style=""> Liked</span>
                   @else
-                  <span class="review-like" id="review-like-{{$film->fr_id}}" data-id="{{$film->fr_id}}" title="" style="margin-left:;"> Like</span>
-                  <span class="review-unlike" id="review-unlike-{{$film->fr_id}}" data-id="{{$film->fr_id}}" title="" style="display: none;margin-left:;"> Liked</span></a>
+                  <span class="review-like" id="review-like-{{$film->fr_id}}" data-id="{{$film->fr_id}}" title="" style=""> Like</span>
+                  <span class="review-unlike" id="review-unlike-{{$film->fr_id}}" data-id="{{$film->fr_id}}" title="" style="display: none;"> Liked</span></a>
                   @endif
                   @endif
                   <span class="comment-open" review-id="{{$film->fr_id}}" rel="tooltip" data-placement="top" title="" data-original-title="See Comments On This Review"  style="margin-left:15px"> {{$replyCount}} Comments</span>

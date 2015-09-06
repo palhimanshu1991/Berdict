@@ -22,30 +22,30 @@
         <form action="" method="POST" name="signup_form"  id="signup_form" class="ajax">
             <div class="form-group">
                 <div><label for="firstname" class="">Full Name</label></div>
-                {{ Form::text('name', '', array('class' => 'form-control' , 'id' => 'name', 'placeholder' => 'Your full name')) }}
+                {!! Form::text('name', '', array('class' => 'form-control' , 'id' => 'name', 'placeholder' => 'Your full name')) !!}
             </div>
 
             <div class="form-group">
                 <div><label for="firstname" class="">Email</label></div>
-                {{ Form::email('email', '', array('class' => 'form-control' , 'id' => 'email', 'placeholder' => 'Your email')) }}
+                {!! Form::email('email', '', array('class' => 'form-control' , 'id' => 'email', 'placeholder' => 'Your email')) !!}
             </div>
 
             <div class="form-group">
                 <div><label for="firstname" class="">Username</label></div>
-                {{ Form::text('username', '', array('class' => 'form-control' , 'id' => 'username', 'placeholder' => 'Your username')) }}
+                {!! Form::text('username', '', array('class' => 'form-control' , 'id' => 'username', 'placeholder' => 'Your username')) !!}
             </div>
 
             <div class="form-group">
                 <div><label for="firstname" class="">Password</label></div>
-                {{ Form::password('password',  array('class' => 'form-control' , 'id' => 'password', 'placeholder' => 'Your password')) }}
+                {!! Form::password('password',  array('class' => 'form-control' , 'id' => 'password', 'placeholder' => 'Your password')) !!}
             </div>        
 
             <div class="form-group">
                 <div><label for="firstname" class="">Confirm Password</label></div>
-                {{ Form::password('re_password',  array('class' => 'form-control' , 'id' => 're_password', 'placeholder' => 'Confirm password')) }}
+                {!! Form::password('re_password',  array('class' => 'form-control' , 'id' => 're_password', 'placeholder' => 'Confirm password')) !!}
             </div>
-            {{ Form::submit('Create Account', array('class' => 'btn btn-primary btn-lg btn-block', 'id' => '')) }}
-            {{ Form::close() }} 
+            {!! Form::submit('Create Account', array('class' => 'btn btn-primary btn-lg btn-block', 'id' => '')) !!}
+            {!! Form::close() !!} 
     </div>
 
     <div id="btn_signup" class="col-lg-4 hidden col-lg-offset-4 m-t-lg" align="" style="">
