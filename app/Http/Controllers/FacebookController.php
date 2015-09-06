@@ -73,7 +73,7 @@ class FacebookController extends Controller {
 
     public function addUser() {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         $uid = Input::get('uid');
         $email = Input::get('email');
@@ -144,11 +144,11 @@ class FacebookController extends Controller {
 		//$invite = New InviteController;
 		//$invite->createCodes($insertedId);		
 		
-        $index = ('public/user_uploads/1000/' . $id . '/index.php');
+        $index = ('user_uploads/1000/' . $id . '/index.php');
 
         //Makes the directories if the index file does not exist
         if (!File::exists($index)) {
-            File::makeDirectory('public/user_uploads/1000/' . $id . '', 0777, true);
+            File::makeDirectory('user_uploads/1000/' . $id . '', 0777, true);
             $handle = fopen($index, 'x+');
             fclose($handle);
         }
@@ -160,7 +160,7 @@ class FacebookController extends Controller {
         $data = file_get_contents($file);
         $image_name = md5($time) . ".jpg";
         // the final new image file with the name
-        $new = ("public/user_uploads/1000/" . $id . "/" . $image_name);
+        $new = ("user_uploads/1000/" . $id . "/" . $image_name);
         // Write the contents back to a new file
         file::put($new, $data);
 
@@ -272,7 +272,7 @@ class FacebookController extends Controller {
 
     public function postFbRating($fl_id, $vote, $fb_uid, $access_token) {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         // Create our Application instance (replace this with your appId and secret).
         $facebook = new Facebook(array(
@@ -293,7 +293,7 @@ class FacebookController extends Controller {
 
     public function postFbReview($fl_id, $review, $vote, $fb_uid, $access_token, $fbshare) {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         // Create our Application instance (replace this with your appId and secret).
         $facebook = new Facebook(array(
@@ -326,7 +326,7 @@ class FacebookController extends Controller {
 
     public function postFbFavourite($fl_id, $fb_uid, $access_token) {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         // Create our Application instance (replace this with your appId and secret).
         $facebook = new Facebook(array(
@@ -344,7 +344,7 @@ class FacebookController extends Controller {
 
     public function postFbWatchlist($fl_id, $fb_uid, $access_token) {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         // Create our Application instance (replace this with your appId and secret).
         $facebook = new Facebook(array(
@@ -362,7 +362,7 @@ class FacebookController extends Controller {
 
     public function postFbFollow($username, $fb_uid, $access_token) {
 
-        include 'public/facebook/facebook.php';
+        include 'facebook/facebook.php';
 
         // Create our Application instance (replace this with your appId and secret).
         $facebook = new Facebook(array(
